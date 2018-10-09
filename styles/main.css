@@ -1,6 +1,6 @@
 body {
-  margin: 50px;
-  font-family: "Montserrat" sans-serif;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
@@ -10,4 +10,15 @@ body {
   width: 1200px;
   margin: 100px auto;
   text-align: center;
+}
+
+.somebox {
+  display: block;
+  margin: auto;
+  width: 300px;
+  padding: 50px;
+  background-color: #1c1c1b;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(100, 100, 100, .15);
 }
