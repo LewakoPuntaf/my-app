@@ -1,24 +1,152 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#EED658, endColorstr=#EC3487)"; /* IE 8-9 */
+  background: -webkit-linear-gradient(to top left, #EC3986, #EED159); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background: -moz-linear-gradient(to top left, #EC3986, #EED159); /* Firefox 3.6-15 */
+  background: -o-linear-gradient(to top left, #EC3986, #EED159); /* Opera 11.1-12 */
+  background: linear-gradient(to top left, #EC3986, #EED159); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+}
+
+@font-face {
+  font-family: 'Antipasto';
+  src: url('../fonts/AntipastoPro-DemiBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../fonts/SF Pro Text Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../fonts/SF Pro Text Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../fonts/SF Pro Text Medium.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
 }
 
 .container {
+  display: flex;
+  justify-content: center;
   width: 1200px;
-  margin: 100px auto;
+  margin: 0 auto;
   text-align: center;
 }
 
-.somebox {
-  display: block;
-  margin: auto;
-  width: 300px;
-  padding: 50px;
-  background-color: #1c1c1b;
+/* .top-menu {
+  position: relative;
+  font-family: 'Antipasto', sans-serif;
   color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 5px 5px rgba(100, 100, 100, .15);
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  align-items: center;
+  margin-top: 26px;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-main:after {
+  content: "";
+  display: inline-block;
+  clear: both;
+}
+
+.left-item {
+  display: inline-flex;
+  justify-content: flex-start;
+}
+
+.right-item {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.menu-main a {
+  text-decoration: none;
+  padding: 0 20px;
+  font-family: 'Antipasto', sans-serif;
+  color: #fff;
+  font-size: 1.25em;
+}
+*/
+
+.top-menu {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-item {
+  float: left;
+  padding-right: 80px;
+}
+
+.right-item {
+  float: right;
+  padding-right: 80px;
+}
+
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.logo {
+  width: 124px;
+}
+
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 26px;
+  padding: 0 20px;
+  font-family: 'Antipasto', sans-serif;
+  font-size: 1.25em;
+  color: white;
 }
